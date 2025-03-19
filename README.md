@@ -42,14 +42,23 @@ This project focuses on analyzing **Amazon Alexa reviews** using **Natural Langu
 ## **📂 Project Structure**
 ```bash
 ├── data/                # Dataset files
-├── notebooks/           # Jupyter notebooks for EDA & model training
-├── models/              # Saved models & vectorizers
-├── app/                 # Flask application
-│   ├── templates/       # HTML files for UI
-│   ├── static/          # CSS & JavaScript
-│   ├── app.py           # Flask API endpoint
-├── README.md            # Project documentation
+├── models/              # Trained models & vectorizers
+│   ├── countVectorizer.pkl  # Saved CountVectorizer
+│   ├── model_dt.pkl         # Decision Tree model
+│   ├── model_rf.pkl         # Random Forest model
+│   ├── model_xgb.pkl        # XGBoost model
+│   ├── scaler.pkl           # Standard scaler
+├── notebook/           # Jupyter notebooks for EDA & model training
+│   ├── Data Exploration.ipynb
+├── static/             # Frontend assets
+│   ├── script.js       # JavaScript for UI interactivity
+│   ├── style.css       # CSS for styling
+├── templates/          # HTML templates
+│   ├── index.html      # Web interface
+├── api.py              # Flask API for model inference
+├── main.py             # Main application entry point
 ├── requirements.txt     # Required libraries
+├── README.md    
 ```
 
 ---
