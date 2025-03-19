@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sentiment Analysis</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="background"></div>
+    
+    <div class="container">
+        <h1 class="title">Sentiment Analysis</h1>
+        <p class="subtitle">Experience AI-driven text analysis with elegance.</p>
+
+        <div class="content-box">
+            <h2>Single Text Prediction</h2>
+            <textarea id="text-input" placeholder="Enter your text here..."></textarea>
+            <button class="gold-btn" onclick="predictText()">Analyze</button>
+            <p id="prediction-result"></p>
+        </div>
+
+        <div class="content-box">
+            <h2>Upload CSV for Bulk Analysis</h2>
+            <input type="file" id="file-input">
+            <button class="gold-btn" onclick="predictFile()">Upload & Predict</button>
+            <a id="download-link" style="display: none;" class="gold-btn">Download Predictions</a>
+        
+            <!-- Graph Placeholder -->
+            <h3>Sentiment Distribution</h3>
+            <img id="graph-img" style="display: none; width: 100%; max-width: 500px; border-radius: 10px;">
+        </div>
+        
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
