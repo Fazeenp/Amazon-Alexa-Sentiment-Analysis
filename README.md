@@ -70,7 +70,7 @@ pip install -r requirements.txt
 ```
 ### **2️⃣ Run the Flask App**
 ```bash
-python app.py
+python api.py
 ```
 ### **3️⃣ Access the Web Interface**
 Open **http://127.0.0.1:5000/** in your browser to test sentiment predictions.
